@@ -12,7 +12,15 @@
         <aside>
             <div class="background-wrapper">
                 <div class="logo-box">
-                    <img src="logo.png">
+
+                    <div class="logo-header">
+                        <h2>LoremCo</h2>
+                    </div>
+
+                    <div class="logo">
+                        <img src="logo.png">
+                    </div>
+
                 </div>
             </div>
         </aside>
@@ -29,44 +37,62 @@
             </div>
 
             <div class="form-box">
-                <div class="form-header">
-                    <p>Sign up. Now.</p>
-                </div>
 
                 <div class="form-wrapper">
+
+                    <div class="form-header">
+                        <p>Sign up. Now.</p>
+                    </div>
+
                     <form action="POST">
                         <div class="form-inner">
                             <fieldset class="top-form-box">
-                                <label for="fName">First Name</label>
-                                <input type="text" id="fName">
+                                <div class="form-item">
+                                    <label for="fName">First Name</label>
+                                    <input type="text" id="fName" required>
+                                </div>
                             
-                                <label for="email">Email</label>
-                                <input type="email" id="email">
+                                <div class="form-item">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" required>
+                                </div>
 
-                                <label for="ssn">Social Security Number</label>
-                                <input type="text" id="ssn">
+                                <div class="form-item">
+                                    <label for="ssn">Social Security Number</label>
+                                    <input type="text" id="ssn" pattern="\d{3}-\d{2}-\d{4}" placeholder="123-45-6789" required>
+                                </div>
 
-                                <label for="password1">Password</label>
-                                <input type="text" id="password1">
+                                <div class="form-item">
+                                    <label for="password1">Password</label>
+                                    <input type="text" id="password1" required>
+                                </div>
                             </fieldset>
 
                             <fieldset>
-                                <label for="lName">Last Name</label>
-                                <input type="text" id="lName">
+                                <div class="form-item">
+                                    <label for="lName">Last Name</label>
+                                    <input type="text" id="lName" required>
+                                </div>
 
-                                <label for="phone">Phone Number</label>
-                                <input type="text" id="phone">
+                                <div class="form-item">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" id="phone" required>
+                                </div>
 
-                                <label for="username"></label>
-                                <input type="text" id="username">
-                                
-                                <label for="password2">Confirm Password</label>
-                                <input type="text" id="password2">
+                                <div class="form-item">
+                                    <label for="username">Username</label>
+                                    <input type="text" id="username" required>
+                                </div>
+
+                                <div class="form-item">
+                                    <label for="password2">Confirm Password</label>
+                                    <input type="text" id="password2" required>
+                                </div>
                             </fieldset>
 
                         </div>
                         <div class="button-wrapper">
-                            <button type="submit">Submit</button>
+                            <button type="submit">Create Account</button>
                         </div>
                     </form>
                 </div>
@@ -74,15 +100,10 @@
                 <div class="bottom">
                     
                     <div class="button-text">
-
+                        <p>Already a member? <a href="">Log in</a></p>
                     </div>
+                    
                 </div>
-            </div>
-        </div>
-
-        <div class="bottom">
-            <div class="button-text">
-                <p>Already a member? <a href="">Log in</a></p>
             </div>
         </div>
     </main>
