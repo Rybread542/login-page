@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup Page</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main>
@@ -44,12 +44,18 @@
                         <p>Sign up. Now.</p>
                     </div>
 
-                    <form action="POST">
+                    <form>
                         <div class="form-inner">
                             <fieldset class="top-form-box">
+
                                 <div class="form-item">
                                     <label for="fName">First Name</label>
                                     <input type="text" id="fName" required>
+                                </div>
+
+                                <div class="form-item">
+                                    <label for="lName">Last Name</label>
+                                    <input type="text" id="lName" required>
                                 </div>
                             
                                 <div class="form-item">
@@ -58,25 +64,13 @@
                                 </div>
 
                                 <div class="form-item">
-                                    <label for="ssn">Social Security Number</label>
-                                    <input type="text" id="ssn" pattern="\d{3}-\d{2}-\d{4}" placeholder="123-45-6789" required>
-                                </div>
-
-                                <div class="form-item">
-                                    <label for="password1">Password</label>
-                                    <input type="text" id="password1" required>
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
-                                <div class="form-item">
-                                    <label for="lName">Last Name</label>
-                                    <input type="text" id="lName" required>
-                                </div>
-
-                                <div class="form-item">
                                     <label for="phone">Phone Number</label>
                                     <input type="text" id="phone" required>
+                                </div>
+
+                                <div class="form-item">
+                                    <label for="ssn">Social Security Number</label>
+                                    <input type="text" id="ssn" pattern="\d{3}-\d{2}-\d{4}" placeholder="123-45-6789" required>
                                 </div>
 
                                 <div class="form-item">
@@ -85,8 +79,14 @@
                                 </div>
 
                                 <div class="form-item">
+                                    <label for="password1">Password</label>
+                                    <input type="password" id="password1" required>
+                                </div>
+
+                                <div class="form-item">
                                     <label for="password2">Confirm Password</label>
-                                    <input type="text" id="password2" required>
+                                    <input type="password" id="password2" required>
+                                    <p class = 'passwords-dont-match-alert'>Passwords don't match.</p>
                                 </div>
                             </fieldset>
 
@@ -102,7 +102,7 @@
                     <div class="button-text">
                         <p>Already a member? <a href="">Log in</a></p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
